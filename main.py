@@ -3,7 +3,7 @@ import AO3
 query = str(input('What would you like to search for? '))
 query = '_'.join(query.split(' '))
 # Causes an error if query yields too many results in a search.
-search = AO3.Search(any_field=query, tags='No Archive Warnings Apply')
+search = AO3.Search(any_field=query, tags='No Archive Warnings Apply, General Audiences')
 search.update()
 
 n = 0
